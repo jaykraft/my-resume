@@ -5,75 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Jason Kraft</h1>
-    <img src="./assets/images/profile-picture.jpg" height="200" />
-    <h2>Summary</h2>
-    <p>
-        I am a skilled multitasker with superior work ethics and good teamwork, 
-        problem-solving and organizational skills. I'm willing to take on any risks to help the team. 
-        I am reliable and dedicated with a hardworking and resourceful approach. 
-        I am also very passionate about learning and working with technology
-    </p>
-    <hr />
-    <h2>Education</h2>
-    <p>
-        <ul>
-            <li>National Diploma – Information Technology (Intelligent Industrial Systems) - Tshwane University of Technology (2018 - 2023)</li>
-        </ul>
-    </p>
-    <hr />
-    <h2>Work Experience</h2>
-    <p>
-        <ul>
-            <li>
-                <h3>Junior Test Automation Engineer - iOCO Digital</h3>
-                <p>1st August 2022 – 31 October 2023</p>
-                <ul>
-                    <li>Performed a combination of Manual Testing and Automation Testing across multiple Web based applications</li>
-                    <li>Performed API Testing on multiple projects</li>
-                    <li>Performed Mobile Testing</li>
-                    <li>Created and maintained Test Cases and Completed SIT Signoff Documents</li>
-                </ul>
-            </li>
-        </ul>
-    </p>
-    <hr />
-    <h2>Skills</h2>
-    <ul>
-        <li>TestComplete</li>
-        <li>Selenium</li>
-        <li>Java/Javascript</li>
-        <li>Azure Devops</li>
-        <li>Postman</li>
-        <li>Cypress</li>
-        <li>UFT</li>
-    </ul>
-    <hr />
-    <h2>Awards and Certifications</h2>
-    <ul>
-        <li>ISTQB Foundation Tester Certification</li>
-        <li>
-            SmartBear Academy Certifications:
+    <div class="container">
+        <header>
+            <h1>Jason Kraft</h1>
+            <p>Automation Tester</p>
+            <button id="theme-toggle" class="theme-toggle">Theme</button>
+        </header>
+
+        <section class="profile">
+            <h2>Profile</h2>
+            <p>Your brief professional profile goes here. Highlight your key skills and experiences.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Jnr Automation Tester</h3>
+                <p>iOCO Digital</p>
+                <p>August 2022 - October 2023</p>
+                <p>I was contracted to a client compamy where I would do a combination of manual testing and automation testing as well as
+                    API testing.
+                </p>
+            </div>
+            <div class="job">
+                <h3>Automation Tester</h3>
+                <p>Telesure Investment Holdings</p>
+                <p>November 2023 - Present</p>
+                <p>My main roles at TIH is to...
+                </p>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="school">
+                <h3>Applied Programming in Software Testing</h3>
+                <p>FTI</p>
+                <p>August 2022 - June 2023</p>
+                <p>I learnt the basics of Selenium, UFT, Cypress, Testcomplete, Java and SQL. I also learnt Testing Principles and Techniques, 
+                    The SDLC and it's methedologies. I also gained understanding of Test planning, Test management and Test execution.</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
             <ul>
-                <li>TestComplete Certification (June 2023)</li>
-                <li>TestComplete - Web Automation Engineer (June 2023)</li>
-                <li>TestComplete - Desktop Application Engineer (August 2023)</li>
+                <li>TestComplete</li>
+                <li>Selenium</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>Postman</li>
+                <li>Azure Devops</li>
+                <li>Cypress</li>
+                <li>UFT</li>
+                <li>Robot Framework</li>
             </ul>
-        </li>
-    </ul>
+        </section>
 
-    <hr />
+        <footer>
+            <p>Contact Information: jasondominickraft@gmail.com | Cell: 084 561 2379</p>
+        </footer>
+    </div>
 
-    <h2>Other</h2>
-    <ul>
-        <li><a href="./public/hobbies.html">My Hobbies</a></li>
-        <li><a href="./public/contact.html">Contact Me</a></li>
-    </ul>
-
-    <footer><p>© Jason Kraft. All rights reserved.</p></footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
