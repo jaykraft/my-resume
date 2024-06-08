@@ -15,7 +15,10 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     margin: 0;
     padding: 20px;
 }
@@ -64,4 +67,12 @@ footer {
 body.dark-theme {
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
+}
+
+p {
+    width: 700px;
+}
+
+ul {
+    list-style: url(/assets/images/caret-right-fill.svg);
 }
