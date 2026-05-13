@@ -1,78 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Jason Kraft | Software Test Engineer</title>
+    <meta name="description" content="Software Test Engineer with 4 years of experience in manual and automated testing, API validation, and CI/CD integration using Azure DevOps.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <h1>Jason Kraft</h1>
-            <p>Automation Tester</p>
-            <button id="theme-toggle" class="theme-toggle">Theme</button>
-        </header>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">JK</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="public/projects.html">Projects</a></li>
+            <li><a href="public/contact.html" class="nav-contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="docs/CV%20of%20Jason%20Dominic%20Kraft.pdf" download="Jason_Kraft_CV.pdf" class="btn-download">
+                <i class="fas fa-download"></i><span> Download CV</span>
+            </a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
 
-        <section class="profile">
-            <h2>Profile</h2>
-            <p>Your brief professional profile goes here. Highlight your key skills and experiences.</p>
+    <header class="hero">
+        <div class="profile-pic profile-pic--placeholder" aria-label="Profile photo placeholder">
+            <i class="fas fa-user"></i>
+        </div>
+        <h1>Jason Kraft</h1>
+        <p class="hero-title">Software Test Engineer</p>
+        <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Johannesburg, South Africa</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jason-kraft-564604214/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/jaykraft" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="public/contact.html" aria-label="Contact Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="profile" class="section">
+            <h2 class="section-title">Profile</h2>
+            <p>Software Test Engineer with 4 years of experience in enterprise and product-driven environments. Strong background in manual and automated testing, API validation, and CI/CD integration using Azure DevOps. Experienced in improving regression coverage, supporting Agile teams, and maintaining automated test suites across web-based applications.</p>
         </section>
 
-        <section class="experience">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Jnr Automation Tester</h3>
-                <p>iOCO Digital</p>
-                <p>August 2022 - October 2023</p>
-                <p>I was contracted to a client compamy where I would do a combination of manual testing and automation testing as well as
-                    API testing.
-                </p>
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Associate Test Automation Engineer</h3>
+                        <p class="company">Nintex</p>
+                        <p class="date"><i class="fas fa-calendar-alt"></i> Feb 2025 &ndash; Feb 2026</p>
+                        <p>Participated in multiple regression testing cycles to ensure system stability and prevent the reintroduction of defects. Tested new features, defect fixes, and code changes while triaging and validating reported bugs. Contributed to ITest creation for newly developed features and expanded automated test coverage to improve overall efficiency and product quality. Assisted with client-reported incident investigations, analyzing issues and identifying effective workarounds.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Automation Tester</h3>
+                        <p class="company">Telesure Investment Holdings</p>
+                        <p class="date"><i class="fas fa-calendar-alt"></i> Nov 2023 &ndash; Feb 2025</p>
+                        <p>Delivered both manual and automated testing across multiple web-based applications, ensuring quality throughout the development lifecycle. Performed API and mobile testing, created and maintained detailed test cases, test plans, and SIT signoff documentation. Configured and managed automation pipelines for continuous testing. Actively participated in Agile ceremonies including backlog grooming, sprint planning, and retrospectives.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Junior Test Automation Engineer</h3>
+                        <p class="company">iOCO Digital</p>
+                        <p class="date"><i class="fas fa-calendar-alt"></i> Aug 2022 &ndash; Nov 2023</p>
+                        <p>Performed manual and automated testing across multiple web-based applications, ensuring functionality, reliability, and overall quality. Conducted API testing on several projects and performed mobile testing across different platforms. Created, maintained, and executed detailed test cases and completed SIT signoff documentation to support successful project delivery.</p>
+                    </div>
+                </div>
             </div>
-            <div class="job">
-                <h3>Automation Tester</h3>
-                <p>Telesure Investment Holdings</p>
-                <p>November 2023 - Present</p>
-                <p>My main roles at TIH is to...
-                </p>
+        </section>
+
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Diploma in Software Development</h3>
+                    <p class="institution">Boston City Campus</p>
+                    <p class="date">Currently Studying &mdash; ETA 2026</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Applied Programme in Software Testing</h3>
+                    <p class="institution">Faculty Training Institute</p>
+                    <p class="date">2023</p>
+                </div>
             </div>
         </section>
 
-        <section class="education">
-            <h2>Education</h2>
-            <div class="school">
-                <h3>Applied Programming in Software Testing</h3>
-                <p>FTI</p>
-                <p>August 2022 - June 2023</p>
-                <p>I learnt the basics of Selenium, UFT, Cypress, Testcomplete, Java and SQL. I also learnt Testing Principles and Techniques, 
-                    The SDLC and it's methedologies. I also gained understanding of Test planning, Test management and Test execution.</p>
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Automation &amp; Testing Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Selenium</span>
+                        <span class="tag">Cypress</span>
+                        <span class="tag">Playwright</span>
+                        <span class="tag">TestComplete</span>
+                        <span class="tag">UFT</span>
+                        <span class="tag">ReadyAPI</span>
+                        <span class="tag">Postman</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">C#</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps &amp; Process</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Azure DevOps</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Agile / Scrum</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>TestComplete</li>
-                <li>Selenium</li>
-                <li>Java</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>Postman</li>
-                <li>Azure Devops</li>
-                <li>Cypress</li>
-                <li>UFT</li>
-                <li>Robot Framework</li>
-            </ul>
+        <section id="certifications" class="section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <h3>ISTQB Foundation Level (CTFL)</h3>
+                    <p>Certified Tester Foundation Level</p>
+                    <a href="docs/ctfl-certificate.pdf" target="_blank" rel="noopener" class="btn-cert">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <h3>Applied Programme in Software Testing</h3>
+                    <p>Faculty Training Institute &mdash; 2023</p>
+                    <a href="docs/software-testing-certificate.pdf" target="_blank" rel="noopener" class="btn-cert">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+            </div>
         </section>
+    </main>
 
-        <footer>
-            <p>Contact Information: jasondominickraft@gmail.com | Cell: 084 561 2379</p>
-        </footer>
-    </div>
+    <footer>
+        <p>Jason Kraft &copy; 2026 &nbsp;&middot;&nbsp; <a href="public/contact.html">Get in touch</a></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>

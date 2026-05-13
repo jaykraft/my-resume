@@ -1,0 +1,16 @@
+# Sensitive personal documents — do not commit these
+docs/Matric Certificate Jason Kraft.pdf
+docs/sastqb_Jason Dominic Kraft_CTFL.pdf
+
+# Secrets (for Formspree or any future integrations)
+.env
+.env.local
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.code-workspace
